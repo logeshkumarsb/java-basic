@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+	Scanner input=new Scanner(System.in);
+        int sal=input.nextInt();
+        String str=input.next();
+        str=str.toUpperCase();
+        char grade=str.charAt(0);
+        int allow=0;
+        if(grade=='A'){allow=1700;}
+        else if(grade=='B'){allow=1500;}
+        else {allow=1300;}
+        double totalSalary=(sal+(sal*0.20)+(sal*0.50)+allow)-(sal*0.11);
+        double roundd=Math.round(totalSalary);
+        int total=(int)roundd;
+        System.out.println(total);
+	}
+}

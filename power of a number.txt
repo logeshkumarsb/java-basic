@@ -1,0 +1,11 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Solution {
+    public static void main(String[] args) {
+      Scanner input=new Scanner(System.in); 
+      int x=input.nextInt();
+      int n=input.nextInt();
+      int y=(int)Math.pow(x,n);
+        System.out.println(y);
+    }
+}
